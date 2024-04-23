@@ -20,7 +20,10 @@ LOGO = """
 # ---------------------------- Functions ------------------------------- #
 
 def print_logo():
-    """Prints the logo of the program"""
+    """
+    Print the logo of the program to the console.
+    :return: None
+    """
 
     print()
     print(LOGO)
@@ -28,7 +31,11 @@ def print_logo():
 
 
 def validate_user_input(prompt):
-    """Validates the user input"""
+    """
+    Validate the user input.
+    :param str prompt: The prompt message to display to the user.
+    :return: The validated integer input from the user.
+    """
 
     while True:
         user_input = input(prompt)
@@ -46,7 +53,13 @@ def validate_user_input(prompt):
 
 
 def square_multiply(base, exponent, modulo):
-    """Performs the square and multiply algorithm."""
+    """
+    Performs the square and multiply algorithm.
+    :param int base: The base number.
+    :param int exponent: The exponent.
+    :param int modulo: The modulo.
+    :return: The result of the square and multiply algorithm.
+    """
 
     res = base
     exponent_in_bit = bin(exponent)[3::]
@@ -61,7 +74,10 @@ def square_multiply(base, exponent, modulo):
 
 
 def main():
-    """Main function of the program"""
+    """
+    Main function of the program.
+    :return: None
+    """
 
     print_logo()
 
